@@ -1,0 +1,57 @@
+/*inner area*/
+QScrollBar::vertical  {
+     border: 1px solid #a5a5a5;
+     background: none;
+     width: 65px;
+     margin: 42px 0 42px 0; /* match top/lower area*/
+ }
+
+/*the knob*/
+ QScrollBar::handle:vertical {
+     background: #d5d5d5;;
+ 	 border: 2px solid #000000;
+     min-height: 60px;	
+	 border-radius: 12px;
+ }
+
+/*lower arrow area*/
+ QScrollBar::add-line:vertical {
+     border: 0px solid grey;
+     background: NONE;
+     height: 40px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+/*top arrow area*/
+ QScrollBar::sub-line:vertical {
+     border: 0px solid grey;
+     background: none;
+     height: 40px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+
+/*arrows*/
+ QScrollBar::up-arrow:vertical  {
+	 image:  url(:/GFX/sbar/up_arrow_scrollbar.png);
+}
+/*pressed*/
+QScrollBar::up-arrow:vertical::pressed  {
+	 image:  url(:/GFX/sbar/up_arrow_scrollbar_pressed.png);
+}
+
+QScrollBar::down-arrow:vertical::pressed  {
+	 image:  url(:/GFX/sbar/down_arrow_scrollbar_pressed.png);
+}
+
+QScrollBar::down-arrow:vertical {
+    /* border: 2px solid grey;
+     width: 3px;
+     height: 23px;  */
+	 image:  url(:/GFX/sbar/down_arrow_scrollbar.png);
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
